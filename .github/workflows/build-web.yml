@@ -24,7 +24,10 @@ jobs:
       - name: Build Documentation Pages
         run: yarn build:docs
 
-      - name: Publish
-        uses: actions/deploy-pages@v3.0.1
-        with:
-          artifact_name: "dist/docs"
+      - name: List out contents
+        run: ls -laR dist/
+
+      # - name: Publish
+      #   uses: actions/deploy-pages@v3.0.1
+      #   with:
+      #     artifact_name: "dist/docs"
